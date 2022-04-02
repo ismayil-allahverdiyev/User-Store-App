@@ -1,6 +1,6 @@
 # comp2
 
-A new Flutter project.
+A new Flutter project. COMP.202 Project
 
 ## Getting Started
 
