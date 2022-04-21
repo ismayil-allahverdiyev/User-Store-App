@@ -15,8 +15,8 @@ class item_pic extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: height * 0.12,
-      width: width * 0.2,
+      height: height/4,
+      width: width/4,
       decoration: BoxDecoration(
         color: customBackground,
         borderRadius: const BorderRadius.all(
