@@ -14,8 +14,11 @@ class item_pic extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+     Size size = MediaQuery.of(context).size;
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Container(
-      height: height/4,
+      height: width/4,
       width: width/4,
       decoration: BoxDecoration(
         color: customBackground,
