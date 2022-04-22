@@ -16,10 +16,16 @@ class filter_button extends StatelessWidget {
       children: [
         GestureDetector(
           child: const Icon(Icons.tune),
-          onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => FilterPage()));
-          },
+          onTap: () => showModalBottomSheet(
+            backgroundColor: Colors.transparent,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.vertical(
+                top: Radius.circular(20),
+              )
+            ),
+            isScrollControlled: true,
+              context: context,
+              builder: (context) => FilterPage())
         ),
         SizedBox(
           width: width * 0.005,
