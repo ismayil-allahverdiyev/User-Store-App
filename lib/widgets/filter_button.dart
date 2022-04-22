@@ -39,10 +39,16 @@ class filter_button extends StatelessWidget {
         ),
         GestureDetector(
           child: const Icon(Icons.swap_vert),
-          onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => SortPage()));
-          },
+          onTap: () => showModalBottomSheet(
+                backgroundColor: Colors.transparent,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.vertical(
+                      top: Radius.circular(20),
+                    )
+                ),
+                isScrollControlled: true,
+                context: context,
+                builder: (context) => SortPage())
         ),
       ],
     );
