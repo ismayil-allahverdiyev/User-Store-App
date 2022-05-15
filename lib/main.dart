@@ -48,6 +48,7 @@ class CommonPage extends StatefulWidget {
 
 class _CommonPageState extends State<CommonPage> {
 
+  
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
