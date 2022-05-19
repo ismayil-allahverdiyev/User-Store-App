@@ -7,6 +7,7 @@ import 'package:flutter/widgets.dart';
 import '../widgets/customAppBar.dart';
 import '../widgets/decoration.dart';
 import '../widgets/grid_view_cardList.dart';
+import '../widgets/edit_button.dart';
 
 
 class SearchPage extends StatelessWidget {
@@ -109,24 +110,13 @@ class SearchPage extends StatelessWidget {
                           child: Column(
                             children: <Widget>[
                               Container(
-                                height: 800,
-                                child: GridView.count(
-                                  crossAxisSpacing: 15,
-                                  mainAxisSpacing: 0.1,
-                                  scrollDirection: Axis.vertical,
-                                  crossAxisCount: 3,
-                                  childAspectRatio: 0.55,
-                                  children: List.generate(50, (index) {
-                                    return Container(
-                                      child: grid_view_cardList(width: width, height: height, buttonType: add_basket(),),
-                                    );
-                                  }),
-                                ),
-                              )
+                                height: height*0.65,
+                                child: grid_view_cardList(height: height, width: width, buttonType: editButton(),),
+                              ),
                             ],
                           ),
                         ),
-                      ),
+                    ),
                     ),
                   ],
                 ),
