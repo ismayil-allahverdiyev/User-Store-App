@@ -236,40 +236,7 @@ class _HomePageState extends State<HomePage> {
 
               ],
             ),
-            Positioned(
-              bottom: 20,
-              left: 10,
-              right: 10,
-              child: GestureDetector(
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>MyBasket()));
-                },
-                child: Card(
-                  elevation: 5,
-                  color: Color(0xffa1c6ea),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)
-                  ),
-                  child: SizedBox(
-                    height: 50,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                              "Shopping cart ",
-                            style: GoogleFonts.aBeeZee(
-                                color: Colors.grey[50],
-                                fontWeight: FontWeight.bold,
-                                fontSize: height*0.02
-                            ),
-                          ),
-                          Icon(Icons.shopping_cart, color: Colors.white,)
-                        ],
-                      )
-                  ),
-                ),
-              ),
-            )
+           
           ],
         ),
       ),
