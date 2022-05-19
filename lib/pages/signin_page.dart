@@ -86,7 +86,7 @@ class _SignInPageState extends State<SignInPage> {
                         isLogin: true,
                         boyut: 0.8,
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => BottomNavigate()));
                         },),
                       SizedBox(height: size.height*0.05,),
                       GestureDetector(
