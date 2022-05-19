@@ -58,7 +58,7 @@ class customAppBar extends StatelessWidget {
                   ),
                   Spacer(),
                   Container(
-                    height: height * 0.075,
+                    height: height * 0.07,
                     width: width * 0.7,
                     child: search_bar(
                       focus: true,
