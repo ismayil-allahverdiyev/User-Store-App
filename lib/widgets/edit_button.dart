@@ -9,23 +9,23 @@ class editButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      top: 18,
-      left: 85,
+      top: 12,
+      left: 12,
       child: SizedBox(
-        height: 30,
-        width: 30,
+        height: 27,
+        width: 27,
         child: FloatingActionButton(
           heroTag: null,
           shape: RoundedRectangleBorder(
-            side:  BorderSide(width: 2, color: customBlue),
+            side:  BorderSide(width: 2, color: Colors.redAccent),
             borderRadius: BorderRadius.circular(8),
           ),
-          backgroundColor: customBackground,
+          backgroundColor: Colors.white,
           mini: true,
           // foregroundColor: customBlue,
           onPressed: () {},
           child: Icon(
-            Icons.add, color: Color(0xff729b79),
+            Icons.add, color: Colors.redAccent,
           ),
         ),
       ),
