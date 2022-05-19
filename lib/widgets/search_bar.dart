@@ -34,7 +34,7 @@ class search_bar extends StatelessWidget {
           border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15.0),
               borderSide: BorderSide.none),
-          fillColor: customBackground,
+          fillColor: Colors.grey[200],
           filled: true,
         ),
       ),
