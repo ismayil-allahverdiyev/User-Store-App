@@ -10,7 +10,7 @@ class editButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Positioned(
       top: 12,
-      left: 12,
+      right: 12,
       child: SizedBox(
         height: 27,
         width: 27,
