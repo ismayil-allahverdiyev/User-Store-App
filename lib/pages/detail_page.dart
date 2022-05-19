@@ -117,7 +117,7 @@ class _DetailPageState extends State<DetailPage> {
             ),
             Center(
               child: Stack(
-                overflow: Overflow.visible,
+                clipBehavior: Clip.none, 
                 children: [
                   item_pic(height: height * 2, width: width * 2),
                   Positioned(
