@@ -30,8 +30,8 @@ class CustomAppBar extends StatelessWidget {
                   },
                 ),
                 hintText: "Search",
-                hintStyle: TextStyle(
-                  Colors.grey[600], FontWeight.w400, height * 0.022, 'OpenSans'),
+                hintStyle: style_arguments(
+                    Colors.grey[600], FontWeight.w400, height * 0.022, 'OpenSans'),
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
                     borderSide: BorderSide.none),
