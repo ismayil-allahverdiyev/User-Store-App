@@ -75,14 +75,20 @@ class _cardListState extends State<cardList> {
                                         ),
                                       ),
                                     ],
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                        currentItem[index]['thumbnail'].toString(),
+                                      ),
+                                      fit: BoxFit.cover,
+                                    ),
                                   ),
                                 ),
                               ),
                             ),
                             Text(
-                              currentItem[index]['name'].toString(),
-                              style: style_arguments(Colors.redAccent[400],
-                                  FontWeight.w800, height * 0.021, 'OpenSans'),
+                              currentItem[index]['price'].toString(),
+                              style: style_arguments(Colors.redAccent,
+                                  FontWeight.w800, height * 0.023, 'OpenSans'),
                             ),
                             SizedBox(
                               height: 10,
@@ -97,17 +103,17 @@ class _cardListState extends State<cardList> {
                               height: 10,
                             ),
                             Text(
-                              currentItem[index]['brand'].toString(),
+                              currentItem[index]['name'].toString(),
                               style: style_arguments(Colors.black,
-                                  FontWeight.w400, height * 0.02, 'OpenSans'),
+                                  FontWeight.w500, height * 0.021, 'OpenSans'),
                             ),
                             SizedBox(
-                              height: 5,
+                              height: 10,
                             ),
                             Text(
-                              currentItem[index]['type'].toString(),
+                              currentItem[index]['brand'].toString(),
                               style: style_arguments(Colors.black,
-                                  FontWeight.w400, height * 0.02, 'OpenSans'),
+                                  FontWeight.w500, height * 0.018, 'OpenSans'),
                             ),
                           ],
                         ),
@@ -127,35 +133,35 @@ class _cardListState extends State<cardList> {
 
 class itemList {
   static final getData = [
-    {
-      'name': 'name1',
-      'thumbnail': 'thumbnail1',
-      'brand': 'brand1',
-      'type': 'type1',
+     {
+      'name': 'Süt 1 L',
+      'thumbnail': 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/11010010/11010010-1ae231-1650x1650.jpg',
+      'brand': 'Pınar',
+      'price': '8,95 TL',
     },
     {
-      'name': 'name2',
-      'thumbnail': 'thumbnail2',
-      'brand': 'brand2',
-      'type': 'type2',
+      'name': 'Jumbo Sosis 330 G',
+      'thumbnail': 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/13502537/13502537-4a40e0-1650x1650.jpg',
+      'brand': 'Banvit ',
+      'price': '10.95 TL',
     },
     {
-      'name': 'name3',
-      'thumbnail': 'thumbnail3',
-      'brand': 'brand3',
-      'type': 'type3',
+      'name': 'Masterpieces Naneli Bitter Çikolata 115 G',
+      'thumbnail': 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/07037171/07037171-24f4ce-1650x1650.jpg',
+      'brand': 'Godiva ',
+      'price': '25,36 TL',
     },
     {
-      'name': 'name4',
-      'thumbnail': 'thumbnail4',
-      'brand': 'brand4',
-      'type': 'type4',
+      'name': 'Penne Rigate (Kalem) Makarna 500 G',
+      'thumbnail': 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/05030342/05030342-027738-1650x1650.jpg',
+      'brand': 'Barilla',
+      'price': '4,90 TL',
     },
     {
-      'name': 'name5',
-      'thumbnail': 'thumbnail5',
-      'brand': 'brand5',
-      'type': 'type5',
+      'name': '15li L Boy Yumurta (63-72 G)',
+      'thumbnail': 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/20001975/20001975-cdebd9-1650x1650.jpg',
+      'brand': 'Yumurtacım',
+      'price': '14,50 TL',
     },
   ];
 }
