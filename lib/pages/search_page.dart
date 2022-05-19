@@ -28,7 +28,7 @@ class SearchPage extends StatelessWidget {
         child: Scaffold(
           resizeToAvoidBottomInset: false,
           appBar: PreferredSize(
-            preferredSize: Size(width, height * 0.2),
+            preferredSize: Size(width, height * 0.12),
             child: customAppBar(),
           ),
           body: ListView(
