@@ -25,30 +25,8 @@ class customAppBar extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(10, 25, 15, 0),
         child: Column(
           children: [
-            Row(
-              children: [
-                IconButton(
-                  icon: const Icon(Icons.keyboard_backspace),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => HomePage(),
-                      ),
-                    );
-                  },
-                  color: Colors.black,
-                  alignment: Alignment.centerLeft,
-                ),
-                Spacer(),
-                basket_icon(),
-              ],
-            ),
-            SizedBox(
-              height: height * 0.015,
-            ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(8,0,0,0),
+              padding: const EdgeInsets.fromLTRB(8,10,0,0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
