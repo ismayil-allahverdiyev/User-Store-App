@@ -8,28 +8,10 @@ import '../widgets/item_pic.dart';
 import 'home_page.dart';
 
 const Color customBackground = Color(0xffe6e6ec);
-const Color customBlue = Color(0xff0e4e93);
-const Color customOceanBlue = Color(0xff638181);
-const Color customBlack54 = Colors.black54;
-const Color customBackgroundWhite = Colors.white;
-
-const TextStyle customHeadline1 =
-    TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: customBlack54);
-const TextStyle customHeadline2 =
-    TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: customBlue);
-const TextStyle customBodyText1 =
-    TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: customBlack54);
-const TextStyle customBodyText2 =
-    TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: Colors.black);
 
 void main() => runApp(const lastShopping());
 
 class lastShopping extends StatelessWidget {
-  static const _kFontFam = 'MyFlutterApp';
-  static const String? _kFontPkg = null;
-
-  static const IconData? basket_1 =
-      IconData(0xe911, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 
   const lastShopping({Key? key}) : super(key: key);
 
@@ -42,27 +24,14 @@ class lastShopping extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          leading: Padding(
-            padding: const EdgeInsets.only(left: 8.0),
-            child: IconButton(
-              icon: const Icon(Icons.keyboard_backspace),
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => HomePage()));
-              },
-              color: Colors.black,
-              alignment: Alignment.centerLeft,
-            ),
+          title: Column(
+            children: [
+              Text('Previous Orders',
+                  style: style_arguments(
+                      Colors.black, FontWeight.w500, height * 0.03, 'OpenSans')),
+              divider(color: Colors.black54),
+            ],
           ),
-          title: Text('Previous Orders',
-              style: style_arguments(
-                  Colors.black, FontWeight.w600, height * 0.028, 'OpenSans')),
-          actions: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: basket_icon(),
-            ),
-          ],
           backgroundColor: Colors.transparent,
           elevation: 0,
         ),
@@ -96,7 +65,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget>
       itemBuilder: (BuildContext context, int index) {
         return ConfigurableExpansionTile(
           headerExpanded: SizedBox(
-            width: width * 0.98,
+            width: width * 0.95,
             height: height * 0.2,
             child: Card(
               shape: RoundedRectangleBorder(
@@ -119,12 +88,12 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget>
                         ),
                       ),
                       SizedBox(
-                        width: width * 0.01,
+                        width: width * 0.005,
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(10, 15, 10, 0),
                         child: Container(
-                          width: width * 0.4,
+                          width: width * 0.3,
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -212,8 +181,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget>
             ),
           ),
           header: SizedBox(
-            width: width * 0.98,
-            height: height * 0.2,
+            width: width * 0.95,
+            height: height * 0.23,
             child: Card(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10.0),
@@ -230,17 +199,17 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget>
                         padding: const EdgeInsets.only(
                             left: 10, top: 10, bottom: 10),
                         child: item_pic(
-                          width: width,
-                          height: height,
+                          width: width * 0.8,
+                          height: height * 0.8,
                         ),
                       ),
                       SizedBox(
-                        width: width * 0.01,
+                        width: width * 0.005,
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(10, 15, 10, 0),
                         child: Container(
-                          width: width * 0.4,
+                          width: width * 0.3,
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -298,7 +267,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget>
                       ),
                       Spacer(),
                       Padding(
-                        padding: EdgeInsets.fromLTRB(10, 30, 15, 0),
+                        padding: EdgeInsets.fromLTRB(5, 30, 15, 0),
                         child: Column(
                           //mainAxisAlignment: MainAxisAlignment.center,
                           //crossAxisAlignment: CrossAxisAlignment.center,
