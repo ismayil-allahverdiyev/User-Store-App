@@ -61,7 +61,7 @@ class favoritePage extends StatelessWidget {
                         Container(
                           height: height,
                           child: GridView.count(
-                            crossAxisSpacing: 15,
+                            crossAxisSpacing: 5,
                             mainAxisSpacing: 0.1,
                             scrollDirection: Axis.vertical,
                             crossAxisCount: 3,
