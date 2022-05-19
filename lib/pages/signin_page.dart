@@ -2,6 +2,7 @@ import 'package:comp2/pages/forgot_password_page.dart';
 import 'package:comp2/pages/home_page.dart';
 import 'package:comp2/widgets/SignInSignUpButton.dart';
 import 'package:flutter/material.dart';
+import '../widgets/bottomNavigationBar.dart';
 
 class SignInPage extends StatefulWidget {
   const SignInPage({Key? key}) : super(key: key);
