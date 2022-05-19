@@ -5,7 +5,7 @@ import 'favorite_button.dart';
 import 'item_pic.dart';
 
 class grid_view_cardList extends StatelessWidget {
-  const grid_view_cardList({
+  grid_view_cardList({
     Key? key,
     required this.width,
     required this.height, this.buttonType,
