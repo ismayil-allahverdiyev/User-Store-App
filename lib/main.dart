@@ -41,9 +41,6 @@ class _MyAppState extends State<MyApp> {
 }
 
 
-
-
-
 class CommonPage extends StatefulWidget {
   const CommonPage({Key? key}) : super(key: key);
 
